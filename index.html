@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="header">
+    <div id="header" class="header">
         <div class="container">
             <img src="./assets/images/logo.png" alt="Vaikų šypsenos logotipas" class="logo" />
             <ul class="nav">
@@ -33,23 +33,46 @@
     <section class="page home">
         <div class="slider">
             <div class="slide">
+                <img src="./assets/images/slide5.jpg" />
+                <h1>Svajonėms lemta išsipildyti</h1>
                 <div class="buttons">
                     <a href="#" class="btn btn-primary">Paremti</a>
                     <a href="#" class="btn btn-primary">Skirti 2%</a>
                 </div>
+                <div class="overlay"></div>
             </div>
         </div>
         <section class="information">
-            <div class="container row">
-                <div class="col-sm-6">
-                    <img src="./assets/images/kid_happy.png" />
+            <div class="container row border-shadow">
+                <div class="col-sm-6 p-0 image-wrapper">
+                    <img src="./assets/images/kid_happy.png" class="border-shadow" />
                 </div>
-                <div class="col-sm-6">
-                    <h3>Heading</h3>
-                    <p>Lorem ipsum</p>
+                <div class="col-sm-6 pl-2">
+                    <h3>Vaikų šypsenos</h3>
+                    <p>
+                        Mūsų veikla orientuota į vietos bendruomenes, kurias gerai pažįstame jau daugelį metų - šeimas ir našlaičius, gyvenančius Pasvalio rajone, taip pat ateityje ir visoje Panevėžio apskrityje.
+                    </p>
+                    <span>Prisidėti prie mūsų idėjos galite įvairiais būdais:</span>
+                    <ul class="dash">
+                        <li>
+                          skirdami paramai 2% nuo pajamų mokesčio (GPM) 
+                        </li>
+                        <li>
+                          pervesdami pinigines lėšas į fondo sąskaitą
+                        </li>
+                        <li>
+                          pasiūlydami prisijungti prie edukacinio, kultūrinio ar sporto renginio, iniciatyvos ar pan. 
+                        </li>
+                    </ul>
+                    <p>
+                        <span>Labdaros ir paramos fondas Vaikų šypsenos</span><br />
+                        <span>Sąskaitos numeris: <span class="medium">LT88 7300 0101 6134 1579</span></span></br>
+                        <span>Įmonės kodas: <span class="medium">305418946</span></span>
+                    </p>
                 </div>
             </div>
         </section>
     </div>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
