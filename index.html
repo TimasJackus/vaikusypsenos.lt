@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./assets/css/flexboxgrid.min.css" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/photoswipe/photoswipe.css"> 
+    <link rel="stylesheet" href="./assets/photoswipe/default-skin/default-skin.css"> 
   </head>
   <body>
     <div id="header" class="header">
@@ -21,11 +23,11 @@
             <ul class="nav">
                 <li>
                     <a href="#" class="nav-link">Pagrindinis</a>
-                    <a href="#" class="nav-link">Apie mus</a>
-                    <a href="#" class="nav-link">Naujienos</a>
+                    <a href="#news" class="nav-link">Naujienos</a>
+                    <a href="#about" class="nav-link">Apie mus</a>
                     <a href="#" class="nav-link">Parama</a>
+                    <a href="#contacts" class="nav-link">Kontaktai</a>
                     <a href="#" class="nav-link">Galerija</a>
-                    <a href="#" class="nav-link">Kontaktai</a>
                 </li>
             </ul>
         </div>
@@ -37,42 +39,206 @@
                 <h1>Svajonėms lemta išsipildyti</h1>
                 <div class="buttons">
                     <a href="#" class="btn btn-primary">Paremti</a>
-                    <a href="#" class="btn btn-primary">Skirti 2%</a>
+                    <!-- <a href="#" class="btn btn-primary">Skirti 2%</a> -->
                 </div>
                 <div class="overlay"></div>
             </div>
         </div>
-        <section class="information">
-            <div class="container row border-shadow">
-                <div class="col-sm-6 p-0 image-wrapper">
-                    <img src="./assets/images/kid_happy.png" class="border-shadow" />
-                </div>
-                <div class="col-sm-6 pl-2">
-                    <h3>Vaikų šypsenos</h3>
-                    <p>
-                        Mūsų veikla orientuota į vietos bendruomenes, kurias gerai pažįstame jau daugelį metų - šeimas ir našlaičius, gyvenančius Pasvalio rajone, taip pat ateityje ir visoje Panevėžio apskrityje.
-                    </p>
-                    <span>Prisidėti prie mūsų idėjos galite įvairiais būdais:</span>
-                    <ul class="dash">
-                        <li>
-                          skirdami paramai 2% nuo pajamų mokesčio (GPM) 
-                        </li>
-                        <li>
-                          pervesdami pinigines lėšas į fondo sąskaitą
-                        </li>
-                        <li>
-                          pasiūlydami prisijungti prie edukacinio, kultūrinio ar sporto renginio, iniciatyvos ar pan. 
-                        </li>
-                    </ul>
-                    <p>
-                        <span>Labdaros ir paramos fondas Vaikų šypsenos</span><br />
-                        <span>Sąskaitos numeris: <span class="medium">LT88 7300 0101 6134 1579</span></span></br>
-                        <span>Įmonės kodas: <span class="medium">305418946</span></span>
-                    </p>
+        <section class="requisites">
+            <h2>Mes tik tarpininkai tarp gerų žmonių ir nuostabių vaikų</h2>
+            <p>
+                Sąskaitos numeris: <strong>LT88 7300 0101 6134 1579</strong>. Įmonės kodas: <strong>305418946</strong>
+            </p>
+        </section>
+        <section id="news" class="news">
+            <div class="container">
+                <h1>Naujienos</h1>
+                <div class="border-shadow white-bg row">
+                    <div class="col-xs-12 col-sm-6 p-0 image-wrapper">
+                        <img src="./assets/images/news/1.jpg" class="border-shadow" />
+                    </div>
+                    <article class="col-xs-12 col-sm-6">
+                        <h3>Pirmoji „Vaikų šypsenų“ iniciatyva nudžiugino pusantro šimto vaikų</h3>
+                        <p class="article-wrapper">
+                            Pirmasis blynas ne visada prisvyla...
+                            <br /><br/>
+                            Taip drąsiai galime pasakyti apie pirmąją mūsų fondo iniciatyvą kurios
+                            akimirkomis su jumis norime pasidalinti.
+                            <br /><br />
+                            Vasario 11 d. į Panevėžio miesto teatrą „Menas“ susirinko net 147 vaikai ir 18 juos
+                            lydinčių mokytojų iš 9  Pasvalio ir Panevėžio rajonų mokyklų.
+                            Tokį gausų svečių būrį pakvietėme į edukacinį renginį - spektaklį šių laikų vaikams
+                            (ir jų tėveliams) ypatingai aktualia tema: „Pikseliukai arba kas telefone gyvena“.
+                            <br /><br />
+                            Daliai vaikų tai buvo pirmasis apsilankymas teatre gyvenime, tad tokia patirtis -
+                            dar vertingesnė. Nepaprastai malonu matyti tokį gausų būrį moksleivių kultūrinėje
+                            erdvėje, kuri skatina dėmesingumą, susikaupimą ir atvirumą idėjoms. Tiek vaikai,
+                            tiek juos lydėję mokytojai džiaugėsi spektakliu, kurį įvertino kaip įdomų,
+                            naudingą, priverčiantį susimąstyti apie technologijų naudojimą.
+                        </p>
+                    </article>
                 </div>
             </div>
         </section>
+        <section id="about" class="about-us">
+            <div class="container">
+                <h1>Apie mus</h1>
+                <div class="border-shadow white-bg row p-2">
+                    <div class="col-xs-12">
+                        <h3>Vaikų šypsenos</h3>
+                        <p>
+                            Labdaros ir paramos fondą "Vaikų šypsenos" įsteigėme 2020-ųjų sausį siekdami padėti našlaičiams ir vaikams iš šeimų, turinčių mažiau galimybių, įsitraukti į neformalaus ugdymo, kultūrinio pažinimo, sportines veiklas, sudaryti jiems sąlygas apsilankyti kultūriniuose renginiuose, geriau pažinti mūsų šalies istorinį bei gamtos paveldą. Tikime, kad tai padės ugdyti vaikų pasitikėjimą savimi, socialinius įgūdžius, vertybines nuostatas, skatins siekti išsilavinimo ir optimistiškai žvelgti į ateitį. 
+                        </p>
+                        <p>
+                            Mūsų veikla orientuota į vietos bendruomenes, kurias gerai pažįstame jau daugelį metų - šeimas ir našlaičius, gyvenančius Pasvalio rajone, taip pat ateityje ir visoje Panevėžio apskrityje.
+                        </p>
+                    
+                        <span>Prisidėti prie mūsų idėjos galite įvairiais būdais:</span>
+                        <ul class="dash">
+                            <li>
+                            skirdami paramai 2% nuo pajamų mokesčio (GPM) 
+                            </li>
+                            <li>
+                            pervesdami pinigines lėšas į fondo sąskaitą
+                            </li>
+                            <li>
+                            pasiūlydami prisijungti prie edukacinio, kultūrinio ar sporto renginio, iniciatyvos ar pan. 
+                            </li>
+                        </ul>
+                        
+                        <p class="right">Fondo steigėjai - Nerijus ir Sandra Jackai</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="donate" class="donate">
+            <div class="container">
+                <h1>Parama</h1>
+                <div class="border-shadow white-bg row">
+                    <div class="col-sm-5 p-2 hidden-mobile">
+                        <img src="./assets/images/high-five.svg" />
+                    </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <section class="details">
+                            <h3>Paremkite pervesdami pinigines lėšas į fondo sąskaitą</h3>
+                            <p>
+                              <span>Labdaros ir paramos fondas Vaikų šypsenos</span><br />
+                              <span>Sąskaitos numeris: <span class="medium">LT88 7300 0101 6134 1579</span></span><br />
+                              <span>Įmonės kodas: <span class="medium">305418946</span></span>
+                            </p>
+                            <h3>Paremkite skirdami paramai 2% nuo pajamų mokesčio (GPM)</h3>
+                            <p>
+                              <span>Labdaros ir paramos fondas Vaikų šypsenos</span><br />
+                              <span>Sąskaitos numeris: <span class="medium">LT88 7300 0101 6134 1579</span></span><br />
+                              <span>Įmonės kodas: <span class="medium">305418946</span></span>
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <h1>Kontaktai</h1>
+                <div class="border-shadow white-bg row">
+                    <div class="col-sm-5 p-2 hidden-mobile">
+                        <img src="./assets/images/undraw_emails_6uqr.svg" />
+                    </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <section class="details">
+                            <h3>Susisiekite</h3>
+                            <p>
+                              <span>El. paštas: <a href="mailto: info@vaikusypsenos.lt">info@vaikusypsenos.lt</a></span><br />
+                              <span>Tel. nr: <a href="tel:+37061578637">+370 615 786 37</a></span><br />
+                              <span>Sekite socialiniame tinkle Facebook: <a rel="noopener noreferrer" class="facebook" target="_blank" href="https://www.facebook.com/vaikusypsenosPasvalys"><img src="/assets/images/facebook.svg" alt="Facebook" class="facebook-icon"> Vaikų šypsenos</a></span>
+                            </p>
+                            <h3>Rekvizitai</h3>
+                            <p>
+                              <span>Labdaros ir paramos fondas Vaikų šypsenos</span><br />
+                              <span>Sąskaitos numeris: <span class="medium">LT88 7300 0101 6134 1579</span></span><br />
+                              <span>Įmonės kodas: <span class="medium">305418946</span></span>
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <h1>Galerija</h1>
+            </div>
+        </section>
     </div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+            It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>© 2020 Vaikų šypsenos</footer>
+    <script src="./assets/photoswipe/photoswipe.min.js"></script> 
+    <script src="./assets/photoswipe/photoswipe-ui-default.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
