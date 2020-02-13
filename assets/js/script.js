@@ -33,7 +33,6 @@ if (window.location.href.includes('#')) {
 
 function toggleMenu(event) {
     const nav = document.getElementById('nav');
-    console.log(nav.classList.contains('open'));
     if (nav.classList.contains('open')) {
         nav.classList.remove('open');
     } else {

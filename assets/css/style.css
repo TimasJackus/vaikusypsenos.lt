@@ -332,6 +332,10 @@ footer {
     article.col-sm-6 {
         padding-left: 25px;
     }
+
+    .nav.open {
+        display: none;
+    }
 }
 
 .article-wrapper {
