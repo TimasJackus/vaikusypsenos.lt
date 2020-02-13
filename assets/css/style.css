@@ -73,20 +73,6 @@ body {
     list-style-type: none;
 }
 
-.nav.open {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #FFF;
-}
-
-.nav.open .nav-link {
-    display: block;
-    margin: 0 30px !important;
-}
-
 .nav-link {
     text-decoration: none;
     color: #01228B;
@@ -326,15 +312,25 @@ footer {
     .hidden-desktop {
         display: block;
     }
+
+    .nav.open {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #FFF;
+    }
+    
+    .nav.open .nav-link {
+        display: block;
+        margin: 0 30px !important;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     article.col-sm-6 {
         padding-left: 25px;
-    }
-
-    .nav.open {
-        display: none;
     }
 }
 
