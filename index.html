@@ -13,23 +13,57 @@
     <link rel="stylesheet" href="./assets/css/flexboxgrid.min.css" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/photoswipe/photoswipe.css"> 
-    <link rel="stylesheet" href="./assets/photoswipe/default-skin/default-skin.css"> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="keywords" content="labdaros, fondas, vaikai, vaikų, šypsenos, šypsena, pagalba, parama, remti, pasvalys, pasvalio, rajonas, panevežys, apskritis, panevežio, panevezys, panevezio, sypsenos, vaiku" />
+    <meta name="description" content="Labdaros ir paramos fondą Vaikų šypsenos įsteigėme 2020-ųjų sausį siekdami padėti našlaičiams ir vaikams iš šeimų, turinčių mažiau galimybių, įsitraukti į neformalaus ugdymo, kultūrinio pažinimo, sportines veiklas, sudaryti jiems sąlygas apsilankyti kultūriniuose renginiuose, geriau pažinti mūsų šalies istorinį bei gamtos paveldą. Tikime, kad tai padės ugdyti vaikų pasitikėjimą savimi, socialinius įgūdžius, vertybines nuostatas, skatins siekti išsilavinimo ir optimistiškai žvelgti į ateitį." />
+    <meta name="copyright "content="Labdaros fondas Vaikų šypsenos" />
+
+    <meta property="og:title" content="Labdaros fondas Vaikų šypsenos" />
+    <meta property="og:url" content="https://vaikusypsenos.lt/" />
+    <meta property="og:site_name" content="Labdaros fondas Vaikų šypsenos" />
+    <meta property="og:image" content="https://vaikusypsenos.lt/facebook-cover.jpg" />
+    <meta property="og:image:alt" content="Labdaros fondas Vaikų šypsenos" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Labdaros ir paramos fondą Vaikų šypsenos įsteigėme 2020-ųjų sausį siekdami padėti našlaičiams ir vaikams iš šeimų, turinčių mažiau galimybių, įsitraukti į neformalaus ugdymo, kultūrinio pažinimo, sportines veiklas, sudaryti jiems sąlygas apsilankyti kultūriniuose renginiuose, geriau pažinti mūsų šalies istorinį bei gamtos paveldą. Tikime, kad tai padės ugdyti vaikų pasitikėjimą savimi, socialinius įgūdžius, vertybines nuostatas, skatins siekti išsilavinimo ir optimistiškai žvelgti į ateitį." />
+
+    <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
   </head>
   <body>
     <div id="header" class="header">
         <div class="container">
-            <img src="./assets/images/logo.png" alt="Vaikų šypsenos logotipas" class="logo" />
-            <ul class="nav">
-                <li>
-                    <a href="#" class="nav-link">Pagrindinis</a>
-                    <a href="#news" class="nav-link">Naujienos</a>
-                    <a href="#about" class="nav-link">Apie mus</a>
-                    <a href="#" class="nav-link">Parama</a>
-                    <a href="#contacts" class="nav-link">Kontaktai</a>
-                    <a href="#" class="nav-link">Galerija</a>
-                </li>
-            </ul>
+            <a href="#"><img src="./assets/images/logo.png" alt="Vaikų šypsenos logotipas" class="logo" /></a>
+            <img onclick="toggleMenu()" src="./assets/images/hamburger_icon.svg" class="hidden-desktop right mt-2 hamburger" />
+            <div id="nav" class="nav">
+                <div class="close hidden-desktop">
+                    <img onclick="toggleMenu()" src="./assets/images/close.svg" />
+                </div>
+                <a href="#" class="nav-link">Pagrindinis</a>
+                <a href="#news" class="nav-link">Naujienos</a>
+                <a href="#about" class="nav-link">Apie mus</a>
+                <a href="#donate" class="nav-link">Parama</a>
+                <a href="#contacts" class="nav-link">Kontaktai</a>
+                <a href="#gallery" class="nav-link">Galerija</a>
+            </div>
         </div>
     </div>
     <section class="page home">
@@ -38,8 +72,7 @@
                 <img src="./assets/images/slide5.jpg" />
                 <h1>Svajonėms lemta išsipildyti</h1>
                 <div class="buttons">
-                    <a href="#" class="btn btn-primary">Paremti</a>
-                    <!-- <a href="#" class="btn btn-primary">Skirti 2%</a> -->
+                    <a href="#donate" class="btn btn-primary">Paremti</a>
                 </div>
                 <div class="overlay"></div>
             </div>
@@ -76,6 +109,8 @@
                             tiek juos lydėję mokytojai džiaugėsi spektakliu, kurį įvertino kaip įdomų,
                             naudingą, priverčiantį susimąstyti apie technologijų naudojimą.
                         </p>
+                        <span class="grey">Data: 2020-02-14</span>
+                        <a href="pirmoji-vaikų-sypsenu-iniciatyva-nudziugino-pusantro-simto-vaiku.html" class="right">Skaityti daugiau</a>
                     </article>
                 </div>
             </div>
@@ -163,82 +198,40 @@
                 </div>
             </div>
         </section>
-        <section id="contacts" class="contacts">
+        <section id="gallery" class="gallery">
             <div class="container">
                 <h1>Galerija</h1>
+            </div>
+            <div ID="ngy2p" data-nanogallery2='{
+                "itemsBaseURL": "/assets/images/2012-02-12/",
+                "thumbnailWidth": "250",
+                "thumbnailHeight": "250",
+                "thumbnailAlignment": "center"
+              }'>
+              <a href="DSC_1193-min.jpg"></a>
+              <a href="DSC_1235-min.jpg"></a>
+              <a href="DSC_1250-min.jpg"></a>
+              <a href="DSC_1254-min.jpg"></a>
+              <a href="DSC_1208-min.jpg"></a>
+              <a href="DSC_1237-min.jpg"></a>
+              <a href="DSC_1251-min.jpg"></a>
+              <a href="DSC_1255-min.jpg"></a>
+              <a href="DSC_1220-min.jpg"></a>
+              <a href="DSC_1242-min.jpg"></a>
+              <a href="DSC_1252-min.jpg"></a>
+              <a href="DSC_1256-min.jpg"></a>
+              <a href="DSC_1222-min.jpg"></a>
+              <a href="DSC_1246-min.jpg"></a>
+              <a href="DSC_1253-min.jpg"></a>
+              <a href="DSC_1257-min.jpg"></a>
+              <a href="DSC_1225-min.jpg"></a>
+              <a href="DSC_1247-min.jpg"></a>
+              <a href="DSC_1258-min.jpg"></a>
             </div>
         </section>
     </div>
 
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-        <!-- Background of PhotoSwipe. 
-            It's a separate element as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
-
-            <!-- Container that holds slides. 
-                PhotoSwipe keeps only 3 of them in the DOM to save memory.
-                Don't modify these 3 pswp__item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
-
-                <div class="pswp__top-bar">
-
-                    <!--  Controls are self-explanatory. Order can be changed. -->
-
-                    <div class="pswp__counter"></div>
-
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                    <!-- element will get class pswp__preloader--active when preloader is running -->
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div> 
-                </div>
-
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
     <footer>© 2020 Vaikų šypsenos</footer>
-    <script src="./assets/photoswipe/photoswipe.min.js"></script> 
-    <script src="./assets/photoswipe/photoswipe-ui-default.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
