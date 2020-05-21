@@ -44,4 +44,14 @@ function locationHashChanged() {
     toggleMenu();
 }
 
+function handleDonateClick() {
+    if (gtag) {
+        const date = new Date();
+        gtag('event', 'paremti_paspaudimas', {
+            'lokali_data': date.toLocaleString(),
+            'gmt_data': date.toGMTString()
+        });
+    }
+}
+
 window.onhashchange = locationHashChanged;
