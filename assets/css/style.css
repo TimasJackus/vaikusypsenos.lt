@@ -40,11 +40,16 @@ body {
     padding-bottom: 20px;
 }
 
+body.white-body {
+    background-color: #FFF;
+}
+
 .post {
     margin-top: 25px;
 }
 
 .header {
+    background-color: #fff9f9;;
     position: fixed;
     height: 80px;
     z-index: 3;
@@ -253,6 +258,10 @@ img {
     color: #FFF;
 }
 
+.requisites.thanks {
+    padding: 25px;
+}
+
 .requisites h2, .requisites p {
     margin: 10px;
 }
@@ -349,4 +358,18 @@ footer {
 
 .nGY2 .nGY2GThumbnailIcon, .nGY2 .nGY2GThumbnailIconsFullThumbnail {
     text-shadow: none !important;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a.partner img {
+    height: 100px;;
+}
+
+section.partners {
+    margin-top: 40px;
 }
