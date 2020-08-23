@@ -373,3 +373,23 @@ a.partner img {
 section.partners {
     margin-top: 40px;
 }
+
+.partner-logo {
+    text-align: center;
+    /* display: inline-flex;
+    flex-direction: column;
+    padding: 0 20px; */
+}
+
+.partner-logo:hover {
+    text-decoration: underline;
+}
+
+.partner-logo span {
+    margin-top: 10px;
+}
+
+.partner-logo img {
+    /* width: inherit; */
+    height: 100px;
+}
